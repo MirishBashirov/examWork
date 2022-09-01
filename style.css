@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 95%;
+}
+.j-between {
+  justify-content: space-between;
+}
+.header {
+  background-color: rgba(4, 9, 30, 0.9);
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+.headcontainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.headline {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.headline a {
+  color: white;
+}
+.hasadropdown a {
+  display: flex;
+}
+.dropdown {
+  opacity: 0;
+  transition: 0.4s;
+  background-color: white;
+}
+.dropdowncontent li a {
+  color: black;
+}
+.hasadropdown:hover .dropdown {
+  opacity: 1;
+}
+.weareplumber {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  width: 60%;
+  gap: 15px;
+  color: white;
+}
+.weareplumber h1 {
+  font-size: 50px;
+}
+.plumbertext {
+  background-image: url(https://preview.colorlib.com/theme/plumber/img/header-bg.jpg.webp);
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+}
+.btn {
+  width: 160px;
+  height: 70px;
+  border-radius: 40%;
+  background-color: rgb(245, 63, 81);
+  border: hidden;
+  cursor: pointer;
+}
+.btn a {
+  color: white;
+}
+.plumbertext::before {
+  content: "";
+  background-color: rgba(4, 9, 30, 0.9);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.plumbing {
+  height: 30vh;
+  display: flex;
+  align-items: center;
+}
+.plumbing div {
+  width: 50%;
+}
+.plumbingend {
+  font-size: 30px;
+}
+.service {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  height: 30vh;
+}
+.service div {
+  width: 25%;
+}
+.bolt {
+  display: flex;
+  height: 130vh;
+  object-fit: cover;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  padding-bottom: 30px;
+}
+.features {
+  display: flex;
+  gap: 30px;
+  width: 100%;
+  height: 600px;
+}
+.features div {
+  width: 120px;
+  height: 120px;
+}
+.statistic {
+  height: 20vh;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding-bottom: 50px;
+}
+.statistic div {
+  width: 23%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0px 10px 50px 0px rgba(245, 63, 81, 0.3);
+}
+.exploreourself {
+  color: white;
+  height: 70vh;
+  background-image: url(https://preview.colorlib.com/theme/plumber/img/video-bg.jpg.webp);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 30px;
+}
